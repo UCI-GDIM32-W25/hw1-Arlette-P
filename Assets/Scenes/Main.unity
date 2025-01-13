@@ -541,7 +541,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 888216046, guid: 6c76c7e97a3914d1c8180322aa5cba71, type: 3}
+  m_Sprite: {fileID: -7642239419928554605, guid: d390a233766e846b7bccd72efc4616b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -564,7 +564,8 @@ Transform:
   m_LocalPosition: {x: -0.5652537, y: -0.077201076, z: 0.0126356715}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1542622892}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &935932061
@@ -579,9 +580,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78692814429bd4f79a92be7f923fb9e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1
-  _playerTransform: {fileID: 0}
-  _plantPrefab: {fileID: 0}
+  _speed: 1.5
+  _playerTransform: {fileID: 935932060}
+  _plantPrefab: {fileID: 3343863005447185855, guid: 18830070633f2490b889eebce3c2f34a, type: 3}
   _numSeeds: 5
   _plantCountUI: {fileID: 0}
 --- !u!1 &1167303336
@@ -786,6 +787,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1542622891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1542622892}
+  - component: {fileID: 1542622893}
+  m_Layer: 0
+  m_Name: Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1542622892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542622891}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.18, y: -0.34, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 935932060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1542622893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542622891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea60be183162a41c18344569880dff0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plantPrefab: {fileID: 3343863005447185855, guid: 18830070633f2490b889eebce3c2f34a, type: 3}
+  Spawn: {fileID: 1542622892}
 --- !u!1 &1554837975
 GameObject:
   m_ObjectHideFlags: 0
