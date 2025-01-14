@@ -26,6 +26,9 @@ public class Spawning : MonoBehaviour
                 Instantiate(_plantPrefab, Spawn.position, Quaternion.identity);
                 _numSeeds--;
             }
+            PlantCountUI.UpdateSeeds();
+
+
         }
         
     }
